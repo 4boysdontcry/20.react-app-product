@@ -7,16 +7,26 @@ background-color: ${ props => props.bgColor ? props.bgColor : '#ddd' };
 color: ${ props => props.color ? props.color : '#ddd' };		/* 여기서 props는 const wrapper가 const TitleBar에게서 받아온 props임 */
 `
 
+const Maintitle = styled.h1`
+font-size: 2em;
+`
+
+const Subtitle = styled.h2`
+font-size: 1.25em;
+color: #bbb;
+`
+
 const style = {
-	borderColor: "#f00", borderWidth: "5px"
+	borderColor: "#666",
+	borderWidth: "1px"
 }
 
 const TitleBar = ({title, design}) => {
 	return (
 		<Wrapper color={ design.color } bgColor={ design.bgColor }>
-			<h1>{ title.mainTitle}</h1>
+			<Maintitle>{ title.mainTitle}</Maintitle>
 			<hr style={ style } />
-			<h1>{ title.subTitle }</h1>
+			<Subtitle>{ title.subTitle }</Subtitle>
 		</Wrapper>
 	);
 }
