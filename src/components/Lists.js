@@ -8,22 +8,13 @@ const ListWrapper = styled.ul`
 
 `
 
-const Lists = () => {
-	const v = {
-		src: "//via.placeholder.com/100",
-		title: 'test',
-		price: 126.0
-	}
+const Lists = ({ lists }) => {
 
 	return (
 		<ListWrapper>
-			<List v={v} />
-			<List v={v} />
-			<List v={v} />
-			<List v={v} />
-			<List v={v} />
-			<List v={v} />
-			<List v={v} />
+			{
+				lists.map(v => <List list={v} key={ v.id } /> )
+			}
 		</ListWrapper>
 	);
 }
