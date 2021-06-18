@@ -14,6 +14,7 @@ const ListWrap = styled.li`
 		width: 98%;
 	}
 `
+
 const Content = styled.div`
 background-color: #eaeaea; padding: 1.5em .75em;
 `
