@@ -6,7 +6,7 @@
 *! useMemo() => [state 최적화]
 */
 
-import React, { useState, useCallback, useRef } from 'react'
+import React, { useState, useCallback, useRef, useMemo } from 'react'
 import styled from 'styled-components'
 import Form from 'react-bootstrap/Form'
 
@@ -23,7 +23,7 @@ const Search = ({ handleChange }) => {
 		setQuery(e.target.value)
 		handleChange(e.target.value)
 	}, [handleChange])
-	
+
 	const onClick = useCallback((e) => {
 		setQuery('')
 		inputRef.current.focus()

@@ -2,6 +2,7 @@ import React, { useCallback, useState, useEffect, useMemo } from 'react';
 import Container from 'react-bootstrap/Container'
 import TitleBar from './components/TitleBar'
 import Search from './components/Search'
+import Lists from './components/Lists'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -25,6 +26,7 @@ const App = () => {
 		<Container>
 			<TitleBar title={ title } design={ design } />
       <Search handleChange={handleChange} />
+      <Lists />
 		</Container>
 	)
 }
