@@ -7,5 +7,5 @@
     {"id": 6, "cate": "02", "title": "좋은 이벤트 3", "src": "evt06.jpg", "price": "30.00"},
     {"id": 7, "cate": "03", "title": "질 좋은 이벤트 1", "src": "evt07.jpg", "price": "45.00"},
     {"id": 8, "cate": "03", "title": "질 좋은 이벤트 2", "src": "evt08.jpg", "price": "185.00"},
-    {"id": 9, "cate": "03", "title": "질 좋은 이벤트 2", "src": "evt09.jpg", "price": "185.00"}
+    {"id": 9, "cate": "03", "title": "질 좋은 이벤트 3", "src": "evt09.jpg", "price": "185.00"}
 ]
